@@ -1,0 +1,78 @@
+@import "style.scss";
+
+
+main{
+     display: flex;
+     @media screen and (max-width: 900px){
+          display: block;
+     }
+     .work-cl{
+          width: 30%;
+          display: block;
+          @media screen and (max-width: 900px){
+               width: 100%;
+               padding:20px 0px 50px;
+          }
+               .works-introdution {
+                    width: 30%;
+                    position: fixed;
+                    padding-right: 30px;
+                    @media screen and (max-width: 900px){
+                         position: relative;
+                         width: 100%;
+                         padding-right: 0px;
+                    }
+                    p{font-size: 23px;}
+               }
+     }
+     
+     }
+
+     .folder-cl{
+          width: 70%;
+          @media screen and (max-width: 900px){
+               width: 100%;
+          }
+     }
+
+     .projects-cover{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5px 30px;
+          @media screen and (max-width: 900px){
+               gap: 10px;
+          }
+
+          div{
+               text-align: center;
+               width: 40%;
+               @media only screen 
+                    and (min-device-width: 768px) 
+                    and (max-device-width: 1024px) {
+                         width: 49%;
+                    }
+               @media screen and (max-width: 600px){
+                    width: 95%;
+               }
+               img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+               }
+               .icon-label{
+                    background-color: #F3F3F3;
+                    padding: 3px 10px;
+                    margin-bottom: 20px;
+                    border: 1.5px solid $blue;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    text-align: center;
+               }
+          }
+          
+          
+     }
+
+
+
