@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/CSS/style.css">
+     <link rel="stylesheet" href="/CSS/index.css">
+     <title>My Portfolio</title>
+     <link rel="icon" type="image/x-icon" href="/ASSETS/ICONS/myportfolio.png">
+</head>
+
+<body style="height: 100vh;
+overflow: hidden;">
+     <header>
+          <nav>
+               <ul class="nav-menu">
+                    <li>
+                         <a href="/index.html"><img src="/ASSETS/ICONS/HOME.svg" width="50px" alt="Home icon"></a>
+                    </li>
+                    <li>
+                         <a href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                         <a href="/about-me.html">About me</a>
+                    </li>
+                    <li>
+                         <a href="/contacts.html">Contacts</a>
+                    </li>
+               </ul>
+          </nav>
+          <div class="metadata">
+               <span id="daynum">00</span>
+               <span id="month">month</span>
+               <span id="year">0000</span>
+               <span>|</span>
+               <div class="display-time" style="display: inline;"></div>
+          </div>
+     </header>
+     <main>
+          <div class="desk-icons">
+               <div>
+                    <a href="projects.html">
+                         <img src="/ASSETS/ICONS/folder-icon.png" width="75px" alt="folder icon">
+                         <p class="icon-label">Projects</p>
+                    </a>
+               </div>
+               <div>
+                    <a href="about-me.html">
+                         <img src="/ASSETS/ICONS/folder-icon.png" width="75px" alt="folder icon">
+                         <p class="icon-label">About me</p>
+                    </a>
+               </div>
+          </div>
+
+
+          <div class="window presentation-window">
+               <div class="cross">
+                    <img src="/ASSETS/ICONS/ESC.svg" alt="esc icon">
+               </div>
+               <div class="photo-presentation">
+                    <img src="ASSETS/IMAGES/profile-photo.jpg" width="120px" alt="personal photo">
+                    <div id="typedtext"></div>
+               </div>
+          </div>
+
+          <div class="window main-window">
+               <div class="cross">
+                    <img src="/ASSETS/ICONS/ESC.svg" alt="esc icon">
+               </div>
+               <div class="main-body">
+                    <div>
+                         <h1>HELLO WORLD!</h1>
+                         <p>It’s Fine, take a look<br>at my desktop.</p>
+                    </div>
+               </div>
+          </div>
+
+          <div class="window code-window">
+               <div class="cross">
+                    <img src="/ASSETS/ICONS/ESC.svg" alt="esc icon">
+               </div>
+               <div class="terminal-text">
+                    <label for="name"></label>
+
+                    <input type="text" id="name" name="name" placeholder="open ~/Desktop/projects ..."
+                         class="code-space">
+               </div>
+
+          </div>
+
+     </main>
+
+     <form>
+          <label class="toggle">
+               <div class="toggle__wrapper" id="hide-checkbox">
+                    <input type="checkbox">
+                    <div class="toggle__bg">
+                         <div class="toggle__sphere">
+                              <div class="toggle__sphere-bg">
+                              </div>
+                              <div class="toggle__sphere-overlay"></div>
+                         </div>
+                    </div>
+               </div>
+          </label>
+     </form>
+
+
+     <script src="script.js"></script>
+     <script>
+          document.getElementById("hide-checkbox").addEventListener("click", myFunction);
+
+          function myFunction() {
+               if (document.getElementById("hide-checkbox").checked) {
+                    setTimeout("window.open('#','_self')", 600);
+               } else {
+                    setTimeout("window.open('TODAY/index.html','_self')", 600);
+               }
+          }
+     </script>
+
+</body>
+
+</html>
