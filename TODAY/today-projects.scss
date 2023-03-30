@@ -1,0 +1,196 @@
+@import "today-style.scss";
+
+
+section{
+     height: 98vh;
+     display: flex;
+     border-bottom: 1px solid black;
+     @media screen and (max-width: 900px){
+          height: auto;
+          flex-direction: column;
+        }
+
+     img{
+          width: 50%;
+          height: auto;
+          object-fit: cover;
+          margin-top: 50px;
+          @media screen and (max-width: 900px){
+               width: 100%;
+               margin-top: 55px;
+             }
+     }
+     .title{
+          padding: 10%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          @media screen and (max-width: 600px){
+               padding: 5%;
+               height: 50vh;
+             }
+          h1{
+               font-size:120px;
+               @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+                    font-size:80px;
+                  }
+               @media screen and (max-width: 600px){
+                    font-size:60px;
+                  }
+          }
+          p{text-transform: uppercase;}
+          .tools{
+               font-weight: 700!important;
+               color: $red;
+               }
+          }
+}
+
+main{
+     margin-top: 10vh;
+     h2{
+          @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+               font-size: 100px!important;
+          }
+          @media screen and (max-width: 600px){
+               font-size: 50px!important;
+             }
+     }
+     .brand-assets{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap:5px;
+          margin-bottom: 20vh;
+          img{width: 100%;}
+          video{width: 300%;}
+          @media screen and (max-width: 600px){
+               grid-template-columns: repeat(2,1fr);
+               video{width: 203%;}
+             }
+     }
+     .moodboard-assets{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap:5px;
+          margin-bottom: 20vh;
+          img{width: 100%;}
+          @media screen and (max-width: 600px){
+               grid-template-columns:1fr;
+             }
+     }
+
+     .golf-assets{
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+               grid-gap: 5px;
+               margin-bottom: 20vh;
+               @media screen and (max-width: 600px){ grid-template-columns: repeat(2, 1fr);}
+               img{
+                    width: 100%;
+               }
+     }
+
+     .website-sections{
+          img{
+               display: block;
+               width: 100%;
+               margin: 5px auto;
+          }
+     }
+
+     
+}
+
+.visit{
+     display: flex;
+     justify-content: center;
+     margin: 50px 0px;
+     button{
+          @media screen and (max-width: 600px){
+               font-size: 14px!important;
+          }
+     }
+     a{
+          display: inline-block;
+          margin: 0px 15px;
+          text-align: center;
+          vertical-align: middle;
+          width: 35%;
+          padding: 10px;
+          border: 1px solid $text-color;
+          &:last-child{border-width: 0px 0px 1px;}
+          @media screen and (max-width: 600px){
+               padding: 10px 0px;
+               width: 45%;
+               margin: 0px 5px;
+
+          }
+        }
+}
+
+
+.wrapper {
+     position: fixed;
+     bottom: 7px;
+     right:10px;
+     z-index: 1000;
+     p{
+          font-size: 15px;
+          text-align: center;
+          text-transform: uppercase;
+     }
+     #hide-checkbox {
+          opacity: 0;
+          height: 0;
+          width: 0;
+        }
+        
+        .toggle {
+          position: relative;
+          cursor: pointer;
+          display: inline-block;
+          width: 120px;
+          height: 65px;
+          border:1px solid black;
+          background-color: $bg-color;
+          background-size:cover;
+          background-position: center;
+          border-radius: 50px;
+          transition: 500ms;
+          overflow: hidden;
+          -webkit-box-shadow: 2px 7px 21px -6px rgba(244,241,236,0.72); 
+         box-shadow: 2px 7px 21px -6px rgba(85, 75, 57, 0.72);
+         @media screen and (max-width: 600px){
+           width: 90px;
+           height: 40px;
+         }
+          .toggle-button {
+               position: absolute;
+               display: inline-block;
+               top: 6px;
+               left: 7px;
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               background: $red;
+               border:1px solid black;
+               overflow: hidden;
+               transition: all 500ms ease-out;
+               @media screen and (max-width: 600px){
+                 width: 30px;
+                 height: 30px;
+                 top: 4px;
+                 left: 6px;
+               }
+             }
+        }
+     
+        #hide-checkbox:checked + .toggle {
+         background-color: $red;
+       }
+   
+       #hide-checkbox:checked + .toggle .toggle-button {
+          background: $bg-color;
+          transform: translateX(45px);
+        }
+   }

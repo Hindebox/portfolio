@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/CSS/today-style.css">
+     <link rel="stylesheet" href="/CSS/today-projects.css">
+     <title>Projects - CADIS1898</title>
+</head>
+
+<body>
+     <header>
+          <div class="logo">
+               <a href="/TODAY/index.html">
+                    <h3>hindebox</h3>
+               </a>
+          </div>
+          <nav>
+               <ul class="nav-menu">
+                    <li>
+                         <a href="/TODAY/#about">About</a>
+                    </li>
+                    <li>
+                         <a href="/TODAY/#projects">Projects</a>
+                    </li>
+                    <li>
+                         <a href="/TODAY/#contacts">Contacts</a>
+                    </li>
+               </ul>
+          </nav>
+     </header>
+
+     <div class="page-transition">
+          <div></div>
+     </div>
+
+     <section>
+          <img src="/ASSETS/IMAGES/CADIS.png" alt="cadis1898 website cover">
+          <div class="title">
+               <div class="details">
+                    <h1>CADIS<br>1898</h1>
+                    <p>Winery website</p>
+               </div>
+               <p class="tools">Wordpress | CSS | javascript</p>
+          </div>
+     </section>
+
+     <main>
+          <h2>website Sections</h2>
+          <div class="website-sections">
+               <img src="/PROJECTS/CADIS/cadis1898 website (2).png" alt="cadis1898 website section">
+               <img src="/PROJECTS/CADIS/cadis1898 website (3).png" alt="cadis1898 website section">
+               <img src="/PROJECTS/CADIS/cadis1898 website (4).png" alt="cadis1898 website section">
+               <img src="/PROJECTS/CADIS/cadis1898 website (1).png" alt="cadis1898 website section">
+          </div>
+     </main>
+
+     <div class="visit">
+          <a href="https://cadis1898.it/" target="_blank"><button>Visit</button></a>
+          <a href="/TODAY/index.html#projects"><button>Back to projects</button></a>
+     </div>
+
+
+     <footer>
+          <div class="email">
+               <h4>send me an email</h4>
+               <p><a href="mailto:hindbou99@gmail.com" target="_blank" rel="noopener noreferrer">hindbou99@gmail.com</a>
+               </p>
+          </div>
+          <div class="social">
+               <p>©2023</p>
+               <div>
+                    <div class="ig">
+                         <p>(1)</p>
+                         <h4>instagram</h4>
+                    </div>
+                    <div class="git">
+                         <p>(2)</p>
+                         <h4>github</h4>
+                    </div>
+               </div>
+          </div>
+     </footer>
+
+     <div class="wrapper">
+          <input type="checkbox" id="hide-checkbox">
+          <label for="hide-checkbox" class="toggle">
+               <span class="toggle-button">
+               </span>
+          </label>
+     </div>
+
+     <script src="/script.js"></script>
+     <script>
+          document.getElementById("hide-checkbox").addEventListener("click", myFunction);
+
+          function myFunction() {
+               if (document.getElementById("hide-checkbox").checked) {
+                    setTimeout("window.open('/PROJECTS/cadis.html','_self')", 600);
+               } else {
+                    setTimeout("window.open('#','_self')", 600);
+               }
+          }
+     </script>
+
+</body>
+
+</html>
