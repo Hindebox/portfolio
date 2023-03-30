@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/CSS/style.css">
+     <link rel="stylesheet" href="/CSS/single-project.css">
+     <title>Projects - Villa Cariola</title>
+     <link rel="icon" type="image/x-icon" href="/ASSETS/ICONS/myportfolio.png">
+</head>
+
+<body>
+     <header>
+          <nav>
+               <ul class="nav-menu">
+                    <li>
+                         <a href="/index.html"><img src="/ASSETS/ICONS/HOME.svg" width="50px" alt="home icon"></a>
+                    </li>
+                    <li>
+                         <a href="http://127.0.0.1:5500/projects.html">Projects</a>
+                    </li>
+                    <li>
+                         <a href="http://127.0.0.1:5500/about-me.html">About me</a>
+                    </li>
+                    <li>
+                         <a href="/contacts.html">Contacts</a>
+                    </li>
+               </ul>
+          </nav>
+          <div class="metadata">
+               <span id="daynum">00</span>
+               <span id="month">month</span>
+               <span id="year">0000</span>
+               <span>|</span>
+               <div class="display-time" style="display: inline;"></div>
+          </div>
+     </header>
+
+     <main>
+          <div class="works-introdution">
+               <div class="text-intro">
+                    <h1>Villa Cariola</h1>
+                    <p>Hotel website redesign</p><br>
+                    <p>Villa Cariola is a 4 stars Boutique Hotel with 36 elegant rooms designed with excellent style and
+                         high-level comforts, which surprise guests thanks to their relaxing and immensely charming
+                         atmosphere.
+                         <br>
+                         The restaurant exclusive menu offers typical specialties of the area and international dishes
+                         as well, served with an elite selection of fine wines.
+                         <br>
+                         The wide parks surrounding the villa and the pool are also the perfect scenary for romantic
+                         wedding ceremonies and special occasions.
+                    </p>
+                    <a href="https://www.villacariola.it/" target="_blank"><img src="/ASSETS/ICONS/discover.svg"
+                              alt="discover arrow icon" class="disocver-btn"></a>
+               </div>
+               <div class="cover-brand">
+                    <img src="/PROJECTS/VILLA_CARIOLA/villa-cariola-location-vista-dall-alto.jpg"
+                         alt="villa cariola hotel website cover">
+               </div>
+          </div>
+          <div class="brand">
+               <h2>Moodboard</h2>
+               <div class="moodboard-assets">
+                    <img src="/PROJECTS/VILLA_CARIOLA/moodboard e sitemap villa cariola (2).jpg"
+                         alt="villa cariola hotel website moodboard">
+                    <img src="/PROJECTS/VILLA_CARIOLA/moodboard e sitemap villa cariola (3).jpg"
+                         alt="villa cariola hotel website moodboard">
+               </div>
+               <h2>website Sections</h2>
+               <div class="website-sections">
+                    <img src="/PROJECTS/VILLA_CARIOLA/villa cariola website (2).jpg"
+                         alt="villa cariola hotel website section">
+                    <img src="/PROJECTS/VILLA_CARIOLA/villa cariola website (4).jpg"
+                         alt="villa cariola hotel website section">
+                    <img src="/PROJECTS/VILLA_CARIOLA/villa cariola website (1).jpg"
+                         alt="villa cariola hotel website section">
+                    <img src="/PROJECTS/VILLA_CARIOLA/villa cariola website (3).jpg"
+                         alt="villa cariola hotel website section">
+               </div>
+               <h3>HOW</h3>
+               <div class="tools">
+                    <div class="tool">
+                         <p>Wordpress</p>
+                    </div>
+                    <div class="tool">
+                         <p>CSS</p>
+                    </div>
+                    <div class="tool">
+                         <p>javascript</p>
+                    </div>
+               </div>
+          </div>
+     </main>
+     <div class="back-to-projects">
+          <a href="http://127.0.0.1:5500/projects.html">
+               <img src="/ASSETS/ICONS/BACK-ARROW.svg" alt="">
+               <h2>BACK TO PROJECTS</h2>
+          </a>
+     </div>
+
+
+
+     <footer>
+          <div class="pacman">
+               <div class="pacman-top"></div>
+               <div class="pacman-bottom"></div>
+               <div class="feed"></div>
+          </div>
+          <div class="info">
+               <div>
+                    <h2>Hind</h2>
+               </div>
+               <div class="contacts">
+                    <p><a href="tel:+393460678053"><img src="/ASSETS/ICONS/phone.png" alt=""> +39 3460678053</a></p>
+               </div>
+               <div class="contacts">
+                    <p><a href="mailto:hindbou99@gmail.com"><img src="/ASSETS/ICONS/email.png"
+                                   alt="">hindbou99@gmail.com</a>
+                    </p>
+               </div>
+               <div class="social">
+                    <figure>
+                         <a href="https://github.com/Hindebox" target="_blank"><img src="/ASSETS/ICONS/git.png"
+                                   alt=""></a>
+                         <figcaption>GITHUB</figcaption>
+                    </figure>
+                    <figure>
+                         <a href="https://www.instagram.com/hindebox/" target="_blank"><img src="/ASSETS/ICONS/ig.png"
+                                   alt=""></a>
+                         <figcaption>IG</figcaption>
+                    </figure>
+               </div>
+          </div>
+
+     </footer>
+
+     <form>
+          <label class="toggle">
+               <div class="toggle__wrapper" id="hide-checkbox">
+                    <input type="checkbox">
+                    <div class="toggle__bg">
+                         <div class="toggle__sphere">
+                              <div class="toggle__sphere-bg">
+                              </div>
+                              <div class="toggle__sphere-overlay"></div>
+                         </div>
+                    </div>
+               </div>
+          </label>
+     </form>
+
+     <script src="/script.js"></script>
+     <script>
+          document.getElementById("hide-checkbox").addEventListener("click", myFunction);
+
+          function myFunction() {
+               if (document.getElementById("hide-checkbox").checked) {
+                    setTimeout("window.open('#','_self')", 600);
+               } else {
+                    setTimeout("window.open('/TODAY/PROJECTS/villa-cariola.html','_self')", 600);
+               }
+          }
+     </script>
+</body>
+
+</html>
