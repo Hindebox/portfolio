@@ -58,7 +58,7 @@ updateDate();
 //-------------------WINDOW TYPING
 var aText = new Array(
      "Hi, my name is HIND.",
-     "I’m 23 years old and I live in Desenzano. I love to challenge myself "
+     "I’m 24 years old and I live in Desenzano. I love to challenge myself "
 );
 var iSpeed = 100;
 var iIndex = 0;
