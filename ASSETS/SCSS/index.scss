@@ -1,0 +1,152 @@
+@import "style.scss";
+
+.desk-icons{
+     width: 100px;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     @media screen and (max-width: 600px){width: 80px;}
+     img{
+          @media screen and (max-width: 600px){width: 60px;}
+     }
+
+     div{text-align: center;}
+     
+     .icon-label{
+          background-color: #F3F3F3;
+          padding: 3px 10px;
+          margin-bottom: 20px;
+          margin-top: -10px;
+          border: 1.5px solid $blue;
+          border-radius: 5px;
+          font-size: 15px;
+          text-align: center;
+     }
+     
+}
+
+    
+
+.presentation-window{
+     width: 50%;
+     height: 25vh;
+     float:right;
+     position: relative;
+     top: -30vh;
+     right: 5vw;
+     z-index: 100;
+     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+          width: 70%;
+          height: 200px;
+          right: 0px;
+          top: -10vh;
+     }
+     @media screen and (max-width: 600px){
+          height: 30vh;
+          top: -20vh;
+     }
+     .photo-presentation {
+          display: flex;
+          padding: 20px;
+          justify-content:center;
+          align-items: center;
+          p{margin-left:20px}  
+          img {@media screen and (max-width: 600px){
+               width: 50px; 
+               object-fit: cover;
+               height: 100px;
+          } }       
+     }
+     #typedtext{width: 60%;margin-left: 15px;}
+}
+
+
+
+
+.main-window{
+     width:50%;
+     top: 30vh;
+     left:30vW;
+     @media screen and (max-width: 900px){
+          width: 67%;
+          top: 40vh;
+     }
+     .main-body{
+          padding: 50px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          @media screen and (max-width: 900px){
+               padding: 40px 30px;
+          }
+          div{padding-left:20px ;}
+          h1{
+               font-size: 100px;
+               @media screen and (max-width: 600px){
+                    font-size: 35px!important;
+               }
+          }
+          p{
+               font-size: 30px;
+               @media screen and (max-width: 900px){
+                    font-size: 20px;
+               }
+          }
+          
+     }
+}
+
+
+
+
+.code-window{
+     width: 30%;
+     height: 30vh;
+     top: 45vh;
+     float: left;
+     @media screen and (max-width: 900px){
+          width: 50%;
+          height: 15vh;
+          top: 67vh;
+     }
+     .terminal-text{
+          padding: 20px;
+          background-color: rgb(30, 30, 30);
+          height: 30vh;
+          border-radius: 0px 0px 15px 15px;
+          @media screen and (max-width: 900px){
+               height: 15vh;
+          }
+          input{
+               width: 100%;
+               background-color: rgb(30, 30, 30);
+               color:#27D628;
+               font-size: 25px;
+               p{padding: 20px;}
+          }
+          input:focus {
+               outline: none;
+             }
+          @keyframes cursor-blink {
+               0% {
+                 opacity: 0;
+               }
+             }
+          input::after{
+               display: inline-block;
+               content: "";
+               width:20px;
+               padding: 10px;
+               background: #27D628;
+               animation: cursor-blink 1.5s steps(2) infinite;
+             }
+     
+     }
+}
+
+::placeholder{color:#27D628;}
+
+
+
+   
+   
